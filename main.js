@@ -1,6 +1,10 @@
-const camiseta = document.getElementById("camiseta titular")
-const tienda = document.getElementById("tienda")
 const clickButton = document.querySelectorAll("button")
+
+
+
+
+const tienda = document.getElementById("tienda")
+
 
 
 const productos = [
@@ -25,14 +29,4 @@ const productos = [
     }
     );
 
-    clickButton.forEach(btn => {
-        btn.addEventListener('click',  addToCarritoItem)
-        console.log("button");
-      })
-
-      function addToCarritoItem(e){
-        const button = e.target
-        console.log(button);
-        
-    } 
-      
+  carrito.push
