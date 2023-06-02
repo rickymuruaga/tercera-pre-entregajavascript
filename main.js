@@ -14,7 +14,6 @@ const productos = [
     productos.forEach((product) => {
     let productos = document.createElement("div");
     productos.innerHTML = `
-        <img src="${producto.img}"> 
         <h3=${producto.nombre}">
         <p= ${producto.precio}">
     `;
