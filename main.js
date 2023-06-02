@@ -1,5 +1,7 @@
 const camiseta = document.getElementById("camiseta titular")
 const tienda = document.getElementById("tienda")
+const clickButton = document.querySelectorAll("button")
+
 
 const productos = [
     {  id: 1, nombre: "Camiseta titular Hombre", precio: 22.500}, 
@@ -22,3 +24,15 @@ const productos = [
 
     }
     );
+
+    clickButton.forEach(btn => {
+        btn.addEventListener('click',  addToCarritoItem)
+        console.log("button");
+      })
+
+      function addToCarritoItem(e){
+        const button = e.target
+        console.log(button);
+        
+    } 
+      
