@@ -3,6 +3,8 @@
     clickButton.forEach(button =>{
         button.addEventListener ("click", addToCarrito)
     })
+
+    const carritoCompra = document.getElementById("carritoCompra");
     
     let carrito = []
     
@@ -34,6 +36,8 @@
         console.log(carrito)
     }
     
+    carritoCompra.addEventListener("click", () =>{
+   })
    
   /* const product = [
         {  id: 1, nombre: "Camiseta titular Hombre", precio: 22.500}, 
