@@ -32,7 +32,7 @@
     }
 
     function renderCarrito (){
-        console.log(carrito)
+       console.log(carrito);
     }
     
     carritoCompra.addEventListener("click", () =>{
