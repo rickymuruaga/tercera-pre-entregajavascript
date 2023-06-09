@@ -1,4 +1,56 @@
-* {
+body{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box; }
+}
+ 
+.nav-container {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+
+.navbar{
+ display: flex;
+ justify-content: space-between;
+ height: 12vh;
+}
+
+.navbar-logo {
+    justify-self: start;
+    margin-left: 20px;
+    color: aqua;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+.ver-carrito{
+ font-size: 25px;
+ margin-right: 20px;
+ margin-top: 3.5vh;
+ cursor: pointer;
+}
+.banner {
+    background-size: cover;
+    background-position-x: center;
+    height: 100vh;
+    background-image: url("https://images.app.goo.gl/F7kinh8yFTTmwNvW9");
+}
+
+.banner-container {
+    text-align: center;
+    padding: 15% 0;
+}  
+
+.banner h1 {
+    margin: 0;
+    color: aqua;
+    text-shadow: 1px 1px 3px;
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 3px;
+
+}

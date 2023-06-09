@@ -1,53 +1,72 @@
-    const clickButton = document.querySelectorAll("button")
+const shopContent = document.getElementById("shopContent")
 
-    clickButton.forEach(button =>{
-        button.addEventListener ("click", addToCarrito)
-    })
-
-    const carritoCompra = document.getElementById("carritoCompra");
-    
-    let carrito = []
-    
-    function addToCarrito(e){
-      const button = e.target
-      const item = button.closest('.card')  
-      const nombrePrenda = item.querySelector('.card-title').textContent;
-      const precio = item.querySelector('.card-text').textContent;
-      const imagen = item.querySelector('.card-img-top').src;
-      
-      const newItem = {
-        titulo: nombrePrenda,
-        precio: precio,
-        imagen: imagen,
-        cantidad: 1,
-    
-    }
-     addItemCarrito(newItem)
- }
-     
-    function addItemCarrito(newItem){
-        carrito.push(newItem)
-        renderCarrito()
-       
-    }
-
-    function renderCarrito (){
-       console.log(carrito);
-    }
-    
-    carritoCompra.addEventListener("click", () =>{
-        carrito.push({
-
-        })
-   })
+const productos = [ {
    
-  
+    id: 1,
+    nombre: "Camiseta titular hombre",
+    precio: 25000,
+    img: "https://images.app.goo.gl/Y5j9VPYP2rF35xPc7",
+    },
 
+    {
+     id: 2,
+     nombre: "camiseta suplente mujer",
+     precio: 20000,
+     img: "https://images.app.goo.gl/M8VFUMafqsZ9Cjr66",
+    },
+   {
+    id: 3,
+    nombre: "short hombre",
+    precio: 10000,
+    img: "https://images.app.goo.gl/6CfvKUiF5XdpaRbK7",
+   },
+ {
+    id: 4,
+    nombre: "Campera",
+    precio: 35000,
+    img: "https://images.app.goo.gl/wA4yeZ88DWyp1xZy8",
+    },
+]
+
+
+
+let carrito = [];
+
+
+
+productos.forEach((product) => {
+ let content = document.createElement("div")
+ content.className = "card";
+ content.innerHTML = `
+   <img src="${product.img}">
+   <h2>${product.nombre}<h2>
+   <p class="preci">${product.precio} $<p>
+ `; 
   
+  shopContent.append(content);
+
+ 
+
+ 
+
+  let comprar = document.createElement("button")
+  comprar.innerText = "comprar";
+  comprar.className = "comrpar";
+
+  content.append(comprar);
+
+  comprar.addEventListener("click", () => {
+    carrito.push({
+       id : product.id, 
+       nombre : product.nombre,
+       img: product.img,
+       precio: product.precio,
+      
+    })
+    
+    localStorage.setItem("productos", JSON.stringify(carrito));
+    
+  })
   
-  
-  
-  
-  
-  
-  
+});
+
