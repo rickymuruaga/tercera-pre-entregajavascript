@@ -5,7 +5,7 @@ const productos = [ {
     id: 1,
     nombre: "Camiseta titular hombre",
     precio: 25000,
-    img: "https://images.app.goo.gl/Y5j9VPYP2rF35xPc7",
+    img: "https://images.app.goo.gl/iznmXmADyScRCpYH9",
     },
 
     {
@@ -64,12 +64,10 @@ productos.forEach((product) => {
   
 });
 
-let productosLocalStorage = JSON.stringify(productos);
-localStorage.setItem("productosGuardados", productosLS);
 
-let productosLS = localStorage.getItem("productosGuardados")
+localStorage.setItem("productosGuardados", JSON.stringify(productos));
+let productosLS = JSON.parse(localStorage.getItem("productosGuardados"))
+console.log(productosLS);
+console.log(localStorage);
 
-if(productosLS !== null){
-  let productos = JSON.parse("productosGuardados")
-}
 
