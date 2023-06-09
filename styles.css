@@ -32,7 +32,7 @@ body{
     background-size: cover;
     background-position-x: center;
     height: 100vh;
-    background-image: url("https://images.app.goo.gl/F7kinh8yFTTmwNvW9");
+    
 }
 
 .banner-container {
@@ -53,4 +53,8 @@ body{
     color: white;
     text-shadow: 1px 1px 3px;
 
+}
+
+.shop-content{
+    background-image: url("https://images.app.goo.gl/F7kinh8yFTTmwNvW9");
 }

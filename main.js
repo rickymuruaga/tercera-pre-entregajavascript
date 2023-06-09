@@ -45,13 +45,9 @@ productos.forEach((product) => {
   
   shopContent.append(content);
 
- 
-
- 
-
   let comprar = document.createElement("button")
   comprar.innerText = "comprar";
-  comprar.className = "comrpar";
+  comprar.className = "compar";
 
   content.append(comprar);
 
@@ -63,10 +59,17 @@ productos.forEach((product) => {
        precio: product.precio,
       
     })
-    
-    localStorage.setItem("productos", JSON.stringify(carrito));
-    
+    console.log(carrito);
   })
   
 });
+
+let productosLocalStorage = JSON.stringify(productos);
+localStorage.setItem('productosGuardados', productosLS);
+
+let productosLS = localStorage.getItem("productosGuardados")
+
+if(productosLS !== null){
+  let productos = JSON.parse("productosGuardados")
+}
 
