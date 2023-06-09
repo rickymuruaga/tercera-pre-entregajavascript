@@ -65,7 +65,7 @@ productos.forEach((product) => {
 });
 
 let productosLocalStorage = JSON.stringify(productos);
-localStorage.setItem('productosGuardados', productosLS);
+localStorage.setItem("productosGuardados", productosLS);
 
 let productosLS = localStorage.getItem("productosGuardados")
 
