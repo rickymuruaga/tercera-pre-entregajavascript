@@ -1,60 +1,58 @@
-body{
-    margin: 0;
-}
- 
-.nav-container {
-    position: sticky;
-    z-index: 3;
-    top: 0;
+body {
+  margin: 0;
 }
 
-.navbar{
- display: flex;
- justify-content: space-between;
- height: 12vh;
+.nav-container {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
 }
 
 .navbar-logo {
-    justify-self: start;
-    margin-left: 20px;
-    color: aqua;
-    margin-top: 4vh;
-    cursor: pointer;
+  justify-self: start;
+  margin-left: 20px;
+  color: aqua;
+  margin-top: 4vh;
+  cursor: pointer;
 }
 
-.ver-carrito{
- font-size: 25px;
- margin-right: 20px;
- margin-top: 3.5vh;
- cursor: pointer;
+.ver-carrito {
+  font-size: 25px;
+  margin-right: 20px;
+  margin-top: 3.5vh;
+  cursor: pointer;
 }
 .banner {
-    background-size: cover;
-    background-position-x: center;
-    height: 100vh;
-    
+  background-size: cover;
+  background-position-x: center;
+  height: 100vh;
 }
 
 .banner-container {
-    text-align: center;
-    padding: 15% 0;
-}  
+  text-align: center;
+  padding: 15% 0;
+}
 
 .banner h1 {
-    margin: 0;
-    color: aqua;
-    text-shadow: 1px 1px 3px;
-    font-size: 62px;
-    font-weight: bold;
+  margin: 0;
+  color: aqua;
+  text-shadow: 1px 1px 3px;
+  font-size: 62px;
+  font-weight: bold;
 }
 
 .banner p {
-    font-size: 30px;
-    color: white;
-    text-shadow: 1px 1px 3px;
-
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 3px;
 }
 
-.shop-content{
-    background-image: url("https://images.app.goo.gl/F7kinh8yFTTmwNvW9");
-}
+/* .shop-content{
+      background-image: url("https://images.app.goo.gl/F7kinh8yFTTmwNvW9");
+  } */
