@@ -5,7 +5,7 @@ const productos = [ {
     id: 1,
     nombre: "Camiseta titular hombre",
     precio: 25000,
-    img: "https://images.app.goo.gl/iznmXmADyScRCpYH9",
+    img: "img/CamisetaMujer.wepb",
     },
 
     {
@@ -69,5 +69,4 @@ localStorage.setItem("productosGuardados", JSON.stringify(productos));
 let productosLS = JSON.parse(localStorage.getItem("productosGuardados"))
 console.log(productosLS);
 console.log(localStorage);
-
 

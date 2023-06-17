@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    padding: 0;
+    
 }
  
 .nav-container {
@@ -11,34 +13,41 @@ body{
 .navbar{
  display: flex;
  justify-content: space-between;
- height: 12vh;
+ height: 0vh;
 }
 
 .navbar-logo {
     justify-self: start;
-    margin-left: 20px;
-    color: aqua;
-    margin-top: 4vh;
-    cursor: pointer;
+    margin-left: 2%;
+    margin-top: 5%;
+    
 }
 
 .ver-carrito{
  font-size: 25px;
  margin-right: 20px;
- margin-top: 3.5vh;
+ margin-top: 5%;
  cursor: pointer;
+ 
 }
-.banner {
-    background-size: cover;
+ .bannerafa {
+    box-sizing: border-box;
+    background-size:auto;
     background-position-x: center;
-    height: 100vh;
+    margin-top: 0;
     
-}
+} 
 
-.banner-container {
+.title{
     text-align: center;
-    padding: 15% 0;
-}  
+    color: #00cef5;
+    font-family: sans-serif;}
+
+.parrafo{
+    background-color: #00cef5;
+    text-align: center;
+    text-decoration: dotted;
+}
 
 .banner h1 {
     margin: 0;
@@ -55,6 +64,3 @@ body{
 
 }
 
-.shop-content{
-    background-image: url("https://images.app.goo.gl/F7kinh8yFTTmwNvW9");
-}
