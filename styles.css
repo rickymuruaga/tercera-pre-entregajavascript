@@ -39,11 +39,13 @@ body{
 } 
 
 .title{
+    font-size: 50px;
     text-align: center;
     color: #00cef5;
     font-family: sans-serif;}
 
 .parrafo{
+    font-size: 20px;
     background-color: #00cef5;
     text-align: center;
     text-decoration: dotted;

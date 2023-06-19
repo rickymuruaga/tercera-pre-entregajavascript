@@ -1,30 +1,32 @@
+
 const shopContent = document.getElementById("shopContent")
+
 
 const productos = [ {
    
     id: 1,
     nombre: "Camiseta titular hombre",
     precio: 25000,
-    img: "img/CamisetaMujer.wepb",
+    img: "./images/CamisetaTitularHombre.webp"
     },
 
     {
      id: 2,
      nombre: "camiseta suplente mujer",
      precio: 20000,
-     img: "https://images.app.goo.gl/M8VFUMafqsZ9Cjr66",
+     img:  "./images/CamisetaMujer.webp",
     },
    {
     id: 3,
     nombre: "short hombre",
     precio: 10000,
-    img: "https://images.app.goo.gl/6CfvKUiF5XdpaRbK7",
+    img: "./images/short hombre.webp",
    },
  {
     id: 4,
     nombre: "Campera",
     precio: 35000,
-    img: "https://images.app.goo.gl/wA4yeZ88DWyp1xZy8",
+    img: "./images/camperaAfa.webp",
     },
 ]
 
