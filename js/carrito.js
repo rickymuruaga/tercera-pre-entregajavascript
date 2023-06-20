@@ -34,6 +34,7 @@ function productosEnCarrito(product) {
 }
 
 
+// Añado productos al carrito //
 
 export function addToCarrito(product) {
     Toastify({
