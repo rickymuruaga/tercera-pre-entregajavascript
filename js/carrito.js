@@ -1,6 +1,7 @@
-export {dataFetch};
-    
-function dataFetch (){
+let carrito = [];
+
+
+export function dataFetch (){
     return new Promise((resolve, rejected) => {
         let loadingDiv = document.createElement("div");
     
@@ -32,7 +33,32 @@ function productosEnCarrito(product) {
     return carrito.some((item) => item.id === product.id);
 }
 
-function addToCarrito(product) {
+
+
+export function addToCarrito(product) {
+    Toastify({
+        text: "Producto agregado",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right,#00cef5, #00cef5)",
+          borderRadius: "2 rem",
+          textTransform: "uppercase",
+          fontSize: "0.75 rem",
+        },
+        offset: {
+            x: "1.5 rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: "1.5 rem" // vertical axis - can be a number or a string indicating unity. eg: '2em'
+          },
+
+
+        onClick: function(){} // Callback after click
+      }).showToast();
     if (!productosEnCarrito(product)){
         carrito.push({
             id: product.id,
@@ -56,4 +82,3 @@ function loadCarritoFromLocalStorage(){
 
 loadCarritoFromLocalStorage();
 
-createProducts();

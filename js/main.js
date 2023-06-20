@@ -1,39 +1,11 @@
-import{dataFetch} from "./carrito"
+import{dataFetch,  addToCarrito} from "./carrito.js"
+
+
+
 
 const shopContent = document.getElementById("shopContent")
 
 
-const productos = [ {
-   
-    id: 1,
-    nombre: "Camiseta titular hombre",
-    precio: 25000,
-    img: "./images/CamisetaTitularHombre.webp"
-    },
-
-    {
-     id: 2,
-     nombre: "camiseta suplente mujer",
-     precio: 20000,
-     img:  "./images/CamisetaMujer.webp",
-    },
-   {
-    id: 3,
-    nombre: "short hombre",
-    precio: 10000,
-    img: "./images/short hombre.webp",
-   },
- {
-    id: 4,
-    nombre: "Campera",
-    precio: 35000,
-    img: "./images/camperaAfa.webp",
-    },
-]
-
-
-
-let carrito = [];
 
 
 
@@ -54,7 +26,9 @@ async function createProducts() {
 
   let comprar = document.createElement("button")
   comprar.innerText = "comprar";
-  comprar.className = "compar";
+  comprar.className = "comprar";
+ 
+  
 
   content.append(comprar);
 
@@ -68,12 +42,6 @@ async function createProducts() {
 }
 } 
 
+createProducts();
 
-
-
-
-localStorage.setItem("productosGuardados", JSON.stringify(productos));
-let productosLS = JSON.parse(localStorage.getItem("productosGuardados"))
-console.log(productosLS);
-console.log(localStorage);
 

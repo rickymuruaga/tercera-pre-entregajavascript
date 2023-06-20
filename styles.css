@@ -66,3 +66,34 @@ body{
 
 }
 
+.shop-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+.footer{
+    background-color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.card{
+    text-align: center;
+    justify-content: space-between;
+    background-color: #00cef5;
+    border-radius: 25px;
+    
+}
+
+.comprar{
+    border-radius: 20px;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-block-end: 20px;
+}
