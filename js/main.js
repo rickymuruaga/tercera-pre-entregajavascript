@@ -1,3 +1,4 @@
+import{dataFetch} from "./carrito"
 
 const shopContent = document.getElementById("shopContent")
 
@@ -36,7 +37,11 @@ let carrito = [];
 
 
 
-productos.forEach((product) => {
+async function createProducts() {
+ try{
+  const fetchedData = await dataFetch();
+
+  fetchedData.forEach((product) => {
  let content = document.createElement("div")
  content.className = "card";
  content.innerHTML = `
@@ -54,17 +59,17 @@ productos.forEach((product) => {
   content.append(comprar);
 
   comprar.addEventListener("click", () => {
-    carrito.push({
-       id : product.id, 
-       nombre : product.nombre,
-       img: product.img,
-       precio: product.precio,
-      
-    })
-    console.log(carrito);
-  })
+    addToCarrito(product);
+    });
+   });
+} catch (error){
   
-});
+  console.log(error);
+}
+} 
+
+
+
 
 
 localStorage.setItem("productosGuardados", JSON.stringify(productos));
