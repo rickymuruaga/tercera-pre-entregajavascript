@@ -30,7 +30,6 @@ export function dataFetch (){
 }
 
 
-
 function productosEnCarrito(product) {
     return carrito.some((item) => item.id === product.id);
 }
@@ -75,6 +74,8 @@ export function addToCarrito(product) {
     }
 }
 
+
+
 function loadCarritoFromLocalStorage(){
     const carritoData = localStorage.getItem("carrito");
     if (carritoData){
@@ -82,5 +83,7 @@ function loadCarritoFromLocalStorage(){
     }
 }
 
-loadCarritoFromLocalStorage();
+
+ loadCarritoFromLocalStorage(); 
+
 

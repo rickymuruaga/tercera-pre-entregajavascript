@@ -1,12 +1,7 @@
 import{dataFetch,  addToCarrito} from "./carrito.js"
 
 
-
-
 const shopContent = document.getElementById("shopContent")
-
-
-
 
 
 async function createProducts() {
