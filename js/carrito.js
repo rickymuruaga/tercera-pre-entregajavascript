@@ -29,6 +29,8 @@ export function dataFetch (){
     });
 }
 
+
+
 function productosEnCarrito(product) {
     return carrito.some((item) => item.id === product.id);
 }
