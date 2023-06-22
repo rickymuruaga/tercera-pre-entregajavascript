@@ -71,6 +71,7 @@ export function addToCarrito(product) {
         localStorage.setItem("carrito", JSON.stringify(carrito));
     } else {
         console.log("Producto ya añadido:", product);
+        
     }
 }
 
