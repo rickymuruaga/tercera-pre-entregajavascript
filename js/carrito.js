@@ -1,3 +1,4 @@
+
 let carrito = [];
 
 
@@ -60,13 +61,16 @@ export function addToCarrito(product) {
 
         onClick: function(){} // Callback after click
       }).showToast();
-    if (!productosEnCarrito(product)){
+    
+      if (productosEnCarrito(product)){
         carrito.push({
             id: product.id,
             nombre: product.nombre,
             img: product.img,
             precio: product.precio,
+            
         });
+       
         console.log("producto añadido al carrito:", product);
         localStorage.setItem("carrito", JSON.stringify(carrito));
     } else {
@@ -77,7 +81,7 @@ export function addToCarrito(product) {
 
 
 
-function loadCarritoFromLocalStorage(){
+function cargaLocalStorage(){
     const carritoData = localStorage.getItem("carrito");
     if (carritoData){
         carrito = JSON.parse(carritoData);
@@ -85,6 +89,10 @@ function loadCarritoFromLocalStorage(){
 }
 
 
- loadCarritoFromLocalStorage(); 
+ cargaLocalStorage(); 
 
 
+  
+    
+ 
+   

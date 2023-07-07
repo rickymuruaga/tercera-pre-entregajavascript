@@ -1,27 +1,27 @@
 [ {
    
-    "id": 1,
-    "nombre": "Camiseta titular hombre",
-    "precio": 25000,
-   "img":  "./images/CamisetaTitularHombre.webp"
-    },
+  "id": 1,
+  "nombre": "Camiseta titular hombre",
+  "precio": 25000,
+ "img":  "./images/CamisetaTitularHombre.webp"
+  },
 
-    {
-     "id": 2,
-     "nombre": "Camiseta suplente mujer",
-     "precio": 20000,
-    "img":  "./images/CamisetaMujer.webp"
-    },
-   {
-    "id": 3,
-    "nombre": "Short hombre",
-    "precio": 10000,
-   "img": "./images/short hombre.webp"
-   },
+  {
+   "id": 2,
+   "nombre": "Camiseta suplente mujer",
+   "precio": 20000,
+  "img":  "./images/CamisetaMujer.webp"
+  },
  {
-    "id": 4,
-    "nombre": "Campera",
-    "precio": 35000,
-   "img": "./images/camperaAfa.webp"
-    }
+  "id": 3,
+  "nombre": "Short hombre",
+  "precio": 10000,
+ "img": "./images/short hombre.webp"
+ },
+{
+  "id": 4,
+  "nombre": "Campera",
+  "precio": 35000,
+ "img": "./images/camperaAfa.webp"
+  }
 ]
