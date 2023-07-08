@@ -62,7 +62,7 @@ export function addToCarrito(product) {
 	}).showToast();
     
 
-    // Añado productos al carrito //
+    // Añado productos al carrito ///
 
     if (!productosEnCarrito(product)) {
 		carrito.push({
