@@ -36,49 +36,49 @@ function productosEnCarrito(product) {
 }
 
 
-// Añado productos al carrito //
+
 
 export function addToCarrito(product) {
-    Toastify({
-        text: "Producto agregado",
-        duration: 3000,
-        newWindow: true,
-        close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
-        style: {
-          background: "linear-gradient(to right,#00cef5, #00cef5)",
-          borderRadius: "2 rem",
-          textTransform: "uppercase",
-          fontSize: "0.75 rem",
-        },
-        offset: {
-            x: "1.5 rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: "1.5 rem" // vertical axis - can be a number or a string indicating unity. eg: '2em'
-          },
+	Toastify({
+		text: "Producto agregado",
+		duration: 3000,
+		newWindow: true,
+		close: true,
+		gravity: "top", // `top` or `bottom`
+		position: "right", // `left`, `center` or `right`
+		stopOnFocus: true, // Prevents dismissing of toast on hover
+		style: {
+			background: "linear-gradient(to right,#00cef5, #00cef5)",
+			borderRadius: "2 rem",
+			textTransform: "uppercase",
+			fontSize: "0.75 rem",
+		},
+		offset: {
+			x: "1.5 rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+			y: "1.5 rem", // vertical axis - can be a number or a string indicating unity. eg: '2em'
+		},
 
-
-        onClick: function(){} // Callback after click
-      }).showToast();
+		onClick: function () {}, // Callback after click
+	}).showToast();
     
-      if (productosEnCarrito(product)){
-        carrito.push({
-            id: product.id,
-            nombre: product.nombre,
-            img: product.img,
-            precio: product.precio,
-            
-        });
-       
-        console.log("producto añadido al carrito:", product);
-        localStorage.setItem("carrito", JSON.stringify(carrito));
-    } else {
-        console.log("Producto ya añadido:", product);
-        
-    }
-}
 
+    // Añado productos al carrito //
+
+    if (!productosEnCarrito(product)) {
+		carrito.push({
+			id: product.id,
+			nombre: product.nombre,
+			img: product.img,
+			precio: product.precio,
+		});
+
+		console.log("producto añadido al carrito:", product);
+		localStorage.setItem("carrito", JSON.stringify(carrito));
+	} else {
+		console.log("Producto ya añadido:", product);
+	}
+}
+    
 
 
 function cargaLocalStorage(){
@@ -92,7 +92,4 @@ function cargaLocalStorage(){
  cargaLocalStorage(); 
 
 
-  
-    
- 
-   
+
